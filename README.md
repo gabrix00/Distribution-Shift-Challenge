@@ -1,6 +1,6 @@
-# Project Overview
+# Project Overview
 This project addresses the challenge of training a deep learning model for image classification on a dataset with eight distinct classes. The primary issue is the domain shift between the training and test datasets, where training images have varied backgrounds, but test images have a uniform background. This discrepancy can ostacolate the model's performance in generalizing from training to test data.
-## Proposed Solution
+## Proposed Solution
 To tackle this challenge, we propose a solution that involves:
 * Background Removal: Using an additional neural network to predict bounding boxes for the images.
 * Bounding Box Prediction: Training a model to detect bounding boxes for test set images, as bounding boxes are only available for the training set.
